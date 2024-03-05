@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:paddingVertical="20dp"
+    tools:context=".activity.StudySetDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_study_title"
+            android:layout_width="250dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="171dp"
+            android:text="Câu hỏi ôn luyện OKRs"
+            android:textColor="@color/white_smoke"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="30dp"
+            android:text="Author"
+            android:textColor="@color/white_smoke"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_study_title" />
+
+        <TextView
+            android:id="@+id/tv_number_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="50 Terms"
+            android:textColor="@color/white_smoke"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tv_author"
+            app:layout_constraintTop_toBottomOf="@+id/tv_study_title" />
+
+        <ImageButton
+            android:id="@+id/img_learn"
+            android:layout_width="145dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/border_bottom_blue_white"
+            android:contentDescription="Learn"
+            app:layout_constraintBottom_toTopOf="@+id/rc_study_set_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_author"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/learn_blue" />
+
+        <ImageButton
+            android:id="@+id/img_flashcard"
+            android:layout_width="145dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border_bottom_blue_white"
+            android:contentDescription="Flashcards"
+            app:layout_constraintBottom_toTopOf="@+id/rc_study_set_details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_author"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/flashcard_blue" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_study_set_details"
+            android:layout_width="350dp"
+            android:layout_height="315dp"
+            android:layout_marginTop="352dp"
+            android:background="@color/white_smoke"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_study_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/aqua"
+            android:text="Study this set"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rc_study_set_details"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/img_edit"
+            android:layout_width="86dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="52dp"
+            android:background="@color/primary"
+            android:contentDescription="Edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

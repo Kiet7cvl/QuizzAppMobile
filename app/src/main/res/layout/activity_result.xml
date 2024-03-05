@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context=".activity.ResultActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="RESULT"
+        android:textColor="@color/white_smoke"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="3 / 5"
+        android:textColor="@color/white_smoke"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/totalScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Total Score : 888"
+        android:textColor="@color/white_smoke"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:onClick="returnTop"
+        android:text="Return"
+        android:textColor="@color/white_smoke"
+        android:textSize="18sp" />
+</LinearLayout>

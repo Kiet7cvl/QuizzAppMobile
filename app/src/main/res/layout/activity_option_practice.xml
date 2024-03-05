@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OptionPracticeActivity"
+    android:orientation="vertical"
+    android:background="@color/primary"
+    android:gravity="center"
+    android:paddingHorizontal="10dp">
+
+    <TextView
+        android:id="@+id/tv_learn_option"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Learn"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/border_bottom_gray"
+        android:paddingHorizontal="10dp"
+        android:drawableLeft="@drawable/ic_baseline_history_toggle_off_24"
+        tools:ignore="RtlCompat"
+        android:drawablePadding="40dp"
+        android:elevation="10dp"
+        android:textAlignment="textStart"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/tv_flashcard_option"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Flashcards"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/border_bottom_gray"
+        android:paddingHorizontal="10dp"
+        android:drawableLeft="@drawable/ic_baseline_library_books_24"
+        tools:ignore="RtlCompat"
+        android:drawablePadding="40dp"
+        android:elevation="10dp"
+        android:textAlignment="textStart"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/tv_cancel_option"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cancel"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    tools:context=".activity.ChangeEmailActivity">
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Email:"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white_smoke"
+        android:textColorHint="@color/white_smoke"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/border_bottom_text"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Enter new email"
+        android:paddingVertical="10dp"
+        android:textColor="@color/white_smoke"
+        android:textColorHint="@color/white_smoke"
+        android:textCursorDrawable="@color/black"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_msg_change_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/red"
+
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save_change_email"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:backgroundTint="@color/aqua"
+            android:text="Save"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel_change_email"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/aqua"
+            android:text="Cancel"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
